@@ -1,45 +1,30 @@
-//1. Pergunte ao usuário qual é o dia da semana. Se a resposta for "Sábado" ou "Domingo", mostre "Bom fim de semana!". Caso contrário, mostre "Boa semana!".
-let diaSemana = prompt('Qual dia da semana é hoje?');
+// 1. Crie um contador que comece em 1 e vá até 10 usando um loop while. Mostre cada número.
+let contador = 0;
 
-if (diaSemana == 'Sábado' || diaSemana == 'Domingo') {
-    alert('Bom fim de semana');
-} else {
-    alert('Boa semana');
+while (contador < 10) {
+    console.log(contador);
+    contador++;
 }
 
-//2. Verifique se um número digitado pelo usuário é positivo ou negativo. Mostre um alerta informando.
-let valorInformado = prompt('Informe um valor');
-
-if (valorInformado > 0) {
-    alert(`O valor ${valorInformado} é um número positivo`);
-} else {
-    alert(`O valor ${valorInformado} é um número negativo`);
+// 2. Crie um contador que começa em 10 e vá até 0 usando um loop while. Mostre cada número.
+while (contador > 0) {
+    console.log(contador);
+    contador--;
 }
 
-//3. Crie um sistema de pontuação para um jogo. Se a pontuação for maior ou igual a 100, mostre "Parabéns, você venceu!". Caso contrário, mostre "Tente novamente para ganhar.".
-let pontuacao;
-placar = 100;
+// 3. Crie um programa de contagem regressiva. Peça um número e conte deste número até 0, usando um loop while no console do navegador.
+let numeroPedido = prompt('Informe o número para a contagem regressiva');
 
-while (true) {
-    pontuacao = prompt('Informe o valor da pontuação.');
-
-    if (pontuacao < placar) {
-        alert('Tente novamente para ganhar.');
-    } else {
-        alert('Parabéns, você venceu!');
-        break;
-    }
-
+while (numeroPedido > 0) {
+    alert(numeroPedido);
+    numeroPedido--;
 }
 
-alert('Você alcançou o placar para vencer!');
+// 4. Crie um programa de contagem progressiva. Peça um número e conte de 0 até esse número, usando um loop while no console do navegador.
+numeroPedido = prompt('Informe o número para a contagem progressiva');
+contador = 0;
 
-//4. Crie uma mensagem que informa o usuário sobre o saldo da conta, usando uma template string para incluir o valor do saldo.
-let saldo = 1000;
-
-alert(`Seu saldo é de ${saldo} Reais`);
-
-//5. Peça ao usuário para inserir seu nome usando prompt. Em seguida, mostre um alerta de boas-vindas usando esse nome.
-
-let nome = prompt('Qual é o seu nome?');
-alert(`Olá! Seja bem vindo(a) ${nome}`);
+while (numeroPedido >= contador) {
+    alert(contador);
+    contador++;
+}
